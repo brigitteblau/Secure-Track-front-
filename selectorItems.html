@@ -5,57 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Track</title>
     <link rel="stylesheet" href="estilos.css">
+   <style>  .accordion-content, .floors-item .floors-button-content {
+    display: none;
+}
+
+.accordion-content.active, .floors-item .floors-button-content.active {
+    display: block;
+}
+
+.accordion-button, .floors-button {
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
     <header> 
         <nav> 
-            <a href="index.html">
-                <img id="logo" src="#" width="90px" height="90px">
-            </a> 
-            <ul>
-                <li><h1 class="titulo">Secure Track</h1></li>
+            <div class="logo-titulo">
+                <a href="index.html">
+                    <img id="logo" src="#" width="90px" height="90px">
+                </a>
+                <h1 class="titulo">Secure Track</h1>
+            </div>
+            <ul class="menu">
                 <li><a href="index.html" class="textLi">INICIO</a></li>           
             </ul>
         </nav>
     </header>
-    <main> 
-        <div class="accordion-item">
-            <button class="accordion-button">Edificio de libertador<span class="arrow">&#x25BC;</span></button>
-            <div class="accordion-content">
-                <div class="floors-item">
-                    <button class="floors-button">Planta Baja<span class="arrow">&#x25BC;</span></button>
-                </div>
-                <div class="floors-button">
-                    <button class="subject-button">1er piso<span class="arrow">&#x25BC;</span></button>
-                </div>
-                <div class="floors-button">
-                    <button class="subject-button">2do piso <span class="arrow">&#x25BC;</span></button>
+    
+    <main>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">Edificio de Libertador<span class="arrow">&#x25BC;</span></button>
+                <div class="accordion-content">
+                    <div class="floors-item">
+                        <button class="floors-button">Planta Baja<span class="arrow">&#x25BC;</span></button>
                     </div>
-                    <div class="floors-button">
-                        <button class="subject-button">3er piso <span class="arrow">&#x25BC;</span></button>
-                        </div>
+                    <div class="floors-item">
+                        <button class="floors-button">1er piso<span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">2do piso <span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">3er piso <span class="arrow">&#x25BC;</span></button>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="accordion">
             <div class="accordion-item">
                 <button class="accordion-button">Edificio de Montañeses<span class="arrow">&#x25BC;</span></button>
                 <div class="accordion-content">
-                    <div class="floors-button">
-                        <button class="subject-button">1er piso<span class="arrow">&#x25BC;</span></button>
+                    <div class="floors-item">
+                        <button class="floors-button">Planta Baja<span class="arrow">&#x25BC;</span></button>
                     </div>
-                    <div class="floors-button">
-                        <button class="subject-button">2do piso <span class="arrow">&#x25BC;</span></button>
-                        </div>
-                        <div class="floors-button">
-                            <button class="subject-button">3er piso <span class="arrow">&#x25BC;</span></button>
-                            </div>
-                            <div class="floors-button">
-                                <button class="subject-button">4to piso <span class="arrow">&#x25BC;</span></button>
-                                </div>
-                                <div class="floors-button">
-                                    <button class="subject-button">to piso <span class="arrow">&#x25BC;</span></button>
-                                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">1er piso<span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">2do piso <span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">3er piso <span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">4to piso <span class="arrow">&#x25BC;</span></button>
+                    </div>
+                    <div class="floors-item">
+                        <button class="floors-button">5to piso <span class="arrow">&#x25BC;</span></button>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">
@@ -68,5 +90,6 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
