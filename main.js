@@ -1,68 +1,68 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-    const floorsButtons = document.querySelectorAll('.floors-button');
+    let selector_libertador = document.getElementById("select-libertador");
+    let classroomsLib = document.getElementById("classrooms");
+
+    selector_libertador = document.addEventListener("change", ()=>selectCarros());
+
+    function selectCarros(){
+        for (let index = 0; index < classroomsLib.children.length; index++) {
+            classroomsLib.children[index].remove();           
+        }
+        for (let i = 0; i < firstFloor.length; i++) {
+            let selector = document.createElement("option");
+            selector.value = firstFloor[i].ROOM_ID;
+            selector.innerHTML = firstFloor[i].ROOM_ID;
+            classrooms.appendChild(selector);
+        } }
+
+    let selector_monta = document.getElementById("select-monta");
+    let classroomsMonta = document.getElementById("classrooms");
+
+    selector_libertador = document.addEventListener("change", ()=>selectCarros());
+
+    
 
 
-    accordionButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let content = button.nextElementSibling;
-
+     const firstFloor = [
+        {
+            "id":3,
+            "ROOM_ID": "L101",
             
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                if (item !== content) item.classList.remove('active');
-            });
-            document.querySelectorAll('.accordion-button').forEach(item => {
-                if (item !== button) item.classList.remove('active');
-            });
-
-            content.classList.toggle('active');
-            button.classList.toggle('active');
-        });
-    });
-
-    // Manejar clics en los botones de los pisos
-    floorsButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let availableCarrosDiv = button.nextElementSibling;
-
-            if (button.classList.contains('active')) {
-                
-                button.classList.remove('active');
-                availableCarrosDiv.style.display = 'none';
-            } else {
-                
-                button.classList.add('active');
-                availableCarrosDiv.style.display = 'block';
-
-                // Cerrar el contenido de todos los otros pisos
-                document.querySelectorAll('.floors-button').forEach(btn => {
-                    if (btn !== button) {
-                        btn.classList.remove('active');
-                        btn.nextElementSibling.style.display = 'none';
-                    }
-                });
-
-        //simular la api, despues hay que "linkearla" con hhtps (?)
-                let simulatedData = {
-                    carts: [
-                        { location: 'Aula L3' } 
-                    ],
-                    building: 'Edificio de Libertador', 
-                    floors: [
-                        { name: '2' } 
-                    ]
-                };
-
-                if (button.dataset.building === simulatedData.building && button.dataset.floor === simulatedData.floors[0].name) {
-                    simulatedData.carts.forEach(cart => {
-                        let cartDiv = document.createElement('div');
-                        cartDiv.textContent = `En el ${simulatedData.floors[0].name} del ${simulatedData.building} hay un carro en ${cart.location}`;
-                        availableCarrosDiv.appendChild(cartDiv);
-                    });
-                } else {
-                    availableCarrosDiv.textContent = 'No hay carros disponibles en este piso.';
-                }
-            }
-        });
-    });
-});
+    
+        },
+        {
+            "id":20,
+            "ROOM_ID": "L118",
+            
+    
+        },{
+            "id":101,
+            "ROOM_ID": "L116",
+            
+    
+        },
+        {
+            "id":12,
+            "ROOM_ID": "L109",
+            
+    
+        },{
+            "id":300,
+            "ROOM_ID": "L103",
+            
+    
+        },
+        {
+            "id":7,
+            "ROOM_ID": "L105",
+            
+    
+        },
+        {
+            "id":2,
+            "ROOM_ID": "L101",
+            
+    
+        }
+    ]
+    
+    

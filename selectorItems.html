@@ -15,72 +15,31 @@
             <ul>
                 <li><h1 class="titulo">SECURE TRACK</h1></li>
                 <li><a href="index.html" class="textLi">INICIO</a></li> 
-                <li><button class="textLi">SOBRE NOSOTROS</button></li>          
-                <li><button class="textLi">CONTACTO</button></li>
+                <li><a href="sobre-nosotros.html" class="textLi">SOBRE NOSOTROS</a></li>          
                 <li class="desplegableHeader">
                     <a href="javascript:void(0)" class="textLi">CARROS</a>
                     <div class="desplegable-contenido">
-                        <a href="#">Carro</a>
+                        <a href="#">RETIRAR CARROS</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-button">Edificio de Libertador<span class="arrow">&#x25BC;</span></button>
-                <div class="accordion-content">
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="libertador" data-floor="pb">Planta Baja<span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="libertador" data-floor="1">1er piso<span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="libertador" data-floor="2">2do piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="libertador" data-floor="3">3er piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-button">Edificio de Montañeses<span class="arrow">&#x25BC;</span></button>
-                <div class="accordion-content">
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="pb">Planta Baja<span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="1">1er piso<span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="2">2do piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="3">3er piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="4">4to piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                    <div class="floors-item">
-                        <button class="floors-button" data-building="montañeses" data-floor="5">5to piso <span class="arrow">&#x25BC;</span></button>
-                        <div class="available-carts"></div> <!-- Lugar para mostrar los carros -->
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class="selectors">
+        <select class="select-libertador"> 
+            <option class="option-select" value="L0">Libertador Planta baja</option>
+            <option class="option-select"value="L0">Libertador Primer piso</option>
+            <option class="option-select" value="L0">Libertador segundo piso</option>
+            <option class="option-select" value="L0">Libertador tercer piso</option>   
+        </select>
+        <select class="select-monta"> 
+            <option class="option-select" value="M0">Montañeses Primer piso</option>
+            <option class="option-select" value="M1">Montañeses segundo piso</option>
+            <option class="option-select" value="M2">Montañeses tercer piso</option>   
+            <option class="option-select" value="M3">Montañeses cuarto piso</option>   
+            <option class="option-select" value="M4">Montañeses quinto piso</option>   
+        </select>
+        <select class="classrooms" id="classrooms"></select>
     </main>
     <footer>
         <div class="footer-content">
