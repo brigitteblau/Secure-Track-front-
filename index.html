@@ -75,20 +75,6 @@ footer a:hover {
     </style>
 </head>
 <body>
-    <header> 
-        <nav> 
-            <div class="logo-titulo">
-                <a href="index.html">
-                    <img id="logo" src="#" width="90px" height="90px">
-                </a>
-                <h1 class="titulo">Secure Track</h1>
-            </div>
-            <ul class="menu">
-                <li><a href="index.html" class="textLi">INICIO</a></li>           
-            </ul>
-        </nav>
-    </header>
-    
     <main>
         <div class="login-container">
             <h2>Iniciar Sesión</h2>
@@ -114,4 +100,20 @@ footer a:hover {
     </footer>
     <script src="main.js"></script>
 </body>
+<script> 
+    document.querySelector('form').addEventListener('submit', function (e) {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === '' || password === '') {
+        alert('Por favor, complete todos los campos.');
+        e.preventDefault();
+    }
+
+    if (true) {
+        location.href = "selectorItems.html"
+    }
+});
+
+</script>
 </html>
