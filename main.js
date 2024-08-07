@@ -64,5 +64,16 @@
     
         }
     ]
-    
-    
+    let barcode= getElementById("barcode")
+    barcode = document.addEventListener ("click", qr)
+
+    function qr() {
+        let createQr= JsBarcode("#barcode", "1234", {
+            format: "pharmacode",
+            lineColor: "#0aa",
+            width: 4,
+            height: 40,
+            displayValue: false
+          });     
+    }
+    console.log (createQr)
