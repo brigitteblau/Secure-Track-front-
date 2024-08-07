@@ -6,6 +6,7 @@
     <title>Secure Track</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="logo.png">
+    <script type="text/javascript" src="repository.js"></script>
     <style> 
         main{
     flex: 1;
@@ -79,30 +80,19 @@ footer a:hover {
     <main>
         <div class="login-container">
             <h2>Iniciar Sesión</h2>
-            <form action="#" method="post">
                 <label for="username">Usuario</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Entrar</button>
-            </form>
-            <p> No tienes cuenta? <a href="#">registrate </a></p>
+                <button id="submit">Entrar</button>
+            
+            <p> ¿No tienes cuenta? <a href="registro.html" style="text-decoration: none;">Registrarse </a></p>
         </div>
      </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="politica-de-privacidad.html">Política de Privacidad</a>
-                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2024 Secure Track  Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="main.js"></script>
+   
+    <script src="log-in.js"></script>
 </body>
-<script> 
+<!-- <script> 
     document.querySelector('form').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -117,5 +107,5 @@ footer a:hover {
     }
 });
 
-</script>
+</script> -->
 </html>

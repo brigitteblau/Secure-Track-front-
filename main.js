@@ -1,6 +1,7 @@
     let selector_libertador = document.getElementById("select-libertador");
     let classroomsLib = document.getElementById("classrooms");
 
+
     selector_libertador = document.addEventListener("change", ()=>selectCarros());
 
     function selectCarros(){
@@ -64,8 +65,7 @@
     
         }
     ]
-    let barcode= getElementById("barcode")
-    barcode = document.addEventListener ("click", qr)
+
 
     function qr() {
         let createQr= JsBarcode("#barcode", "1234", {
@@ -76,4 +76,6 @@
             displayValue: false
           });     
     }
-    console.log (createQr)
+ 
+
+   

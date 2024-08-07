@@ -1,4 +1,4 @@
-export const firstFloor = [
+ const firstFloor = [
     {
         "id":3,
         "ROOM_ID": "L101",
